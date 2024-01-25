@@ -14,7 +14,7 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 
 const ExpressError = require("./utils/ExpressError");
-const { connect } = require("./utils/ConnectMongoose");
+const connect = require("./utils/ConnectMongoose");
 
 const campgroundsRoutes = require("./routes/campgrounds");
 const reviewRoutes = require("./routes/reviews");

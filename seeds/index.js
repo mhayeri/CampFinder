@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
 const cities = require("./cities");
 const { places, descriptors } = require("./seedHelpers");
-const { connect } = require("../utils/ConnectMongoose");
+const connect = require("../utils/ConnectMongoose");
 const Campground = require("../models/campground");
-
-const collection = 483251;
 
 connect();
 
@@ -24,12 +22,24 @@ const seedDB = async () => {
             price,
             images: [
                 {
-                    url: "https://res.cloudinary.com/de0zlwer9/image/upload/v1694563350/Yelp/ygwntzj3aag6civ0iqyz.png",
-                    filename: "Yelp/ygwntzj3aag6civ0iqyz",
+                    url: "https://res.cloudinary.com/de0zlwer9/image/upload/v1706216946/Yelp/lcj7xoppxiqyixzw8ybi.jpg",
+                    filename: "Yelp/lcj7xoppxiqyixzw8ybi",
                 },
                 {
-                    url: "https://res.cloudinary.com/de0zlwer9/image/upload/v1694563649/Yelp/rrpdiqei8aerjqql0gpy.png",
-                    filename: "Yelp/rrpdiqei8aerjqql0gpy",
+                    url: "https://res.cloudinary.com/de0zlwer9/image/upload/v1706216928/Yelp/czoskgt5ybxrkccddld7.jpg",
+                    filename: "Yelp/czoskgt5ybxrkccddld7",
+                },
+                {
+                    url: "https://res.cloudinary.com/de0zlwer9/image/upload/v1706216904/Yelp/j19kugctfnrumxvs7sel.jpg",
+                    filename: "Yelp/j19kugctfnrumxvs7sel",
+                },
+                {
+                    url: "https://res.cloudinary.com/de0zlwer9/image/upload/v1706216889/Yelp/eeerizcm47ckcvepkpbf.jpg",
+                    filename: "Yelp/eeerizcm47ckcvepkpbf",
+                },
+                {
+                    url: "https://res.cloudinary.com/de0zlwer9/image/upload/v1706216837/Yelp/oicn9z6mwl8uhfg1qkkh.jpg",
+                    filename: "Yelp/oicn9z6mwl8uhfg1qkkh",
                 },
             ],
         });
